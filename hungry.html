@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>hungry</title>
+	<link rel="stylesheet" href="css/hungry.css">
+	<link href="font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body>
+	<nav class="menu-right">
+		<div class="menu-right-top">
+			<a href="" class="ahover dingdan"><i class="fa fa-file-text-o"></i>
+				<div class="icon-explain">
+					<span>我的订单</span>
+					<div class="delta delta-right"></div>
+				</div>
+			</a>
+			<div class="line"></div>
+			<a href="" class="gouwuche"><i class="fa fa-shopping-cart"></i><br><span>购<br>物<br>车</span></a>
+			<div></div>
+			<a href="" class="ahover xinxi"><i class="fa fa-envelope-o"></i>
+				<div class="icon-explain">
+					<span>我的信息</span>
+					<div class="delta delta-right"></div>
+				</div>
+			</a>
+			<a href="" class="ahover lishi"><i class="fa fa-history"></i>
+				<div class="icon-explain">
+					<span>浏览历史</span>
+					<div class="delta delta-right"></div>
+				</div>
+			</a>
+		</div>
+		<div class="menu-right-bottom">
+			<a href="" id="qrcode" class="qrcode"><i class="fa fa-qrcode"></i>
+				<div class="delsao" id="delsao2">
+					<div class="delta"></div>
+					<div class="saoma">
+						<img src="images/else/erweima.png" alt="">
+						<span>下载手机应用</span>
+						<p>即可参加分享红包活动</p>
+					</div>
+				</div>
+			</a>
+			<a href="" class="ahover kefu"><i class="fa fa-headphones"></i>
+				<div class="icon-explain">
+					<span>在线客服</span>
+					<div class="delta delta-right"></div>
+				</div>
+			</a>
+			<a href="javascript:;" class="ahover topback" id="topback"><img src="images/else/topback.png" alt=""></a>		
+		</div>
+	</nav>
+
+	<nav class="menu-head">
+		<div class="menu-head-wrapper">
+			<div class="menu-head-logo">
+				<a href=""><img src="images/else/logo.jpg" alt="logo"></a>
+			</div>
+			<div class="menu-head-left">
+				<a href="">首页</a>
+				<a href="">品牌商家</a>
+				<a href="">我的订单</a>
+				<div class="clear"></div>			
+			</div>
+			<div class="menu-head-middle">
+				<a href=""><i class="fa fa-shopping-cart"></i>积分商城</a>
+				<a href=""><i class="fa fa-headphones"></i>服务中心</a>
+				<a href="" id="speciala"><i class="fa fa-mobile"></i>手机应用</a>
+				<div class="clear"></div>
+				<div class="delsao" id="delsao">
+					<div class="delta"></div>
+					<div class="saoma" >
+						<p>扫一扫，手机订餐更方便</p>
+						<img src="images/else/erweima.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="menu-head-right">
+				<a href=""><i class="fa fa-user"></i>登陆/注册</a>
+			</div>
+			<div class="clear"></div>	 				
+		</div>
+	</nav>
+
+	<nav class="menu-scroll" id="menuscroll">
+		<span><a href="">默认排序</a></span>
+		<ul>
+			<li><a href="">销量好</a></li>
+			<li><a href="">评价高</a></li>
+			<li id="Mchoose1"><a href="">其它排序<i class="fa fa-chevron-down"></i></a>
+				<div class="choFrom" id="MchoFrom1">
+					<span><a href="">其它排序<i class="fa fa-chevron-up"></i></a></span>
+					<div class="a-list">
+						<a href="">距离最近</a>
+						<a href="">配送速度</a>
+						<a href="">起送金额</a>
+					</div>
+				</div>
+			</li>
+			<li id="Mchoose2"><a href="">起送价格：不限<i class="fa fa-chevron-down"></i></a>
+				<div class="choFrom" id="MchoFrom2">
+					<span><a href="">起送价格：不限<i class="fa fa-chevron-up"></i></a></span>
+					<div class="a-list">
+						<a href="" style="color:#0089dc">不限</a>
+						<a href="">15元以下</a>
+						<a href="">20元以下</a>
+						<a href="">30元以下</a>
+						<a href="">40元以下</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<form action="" class="check4">
+			<label for=""><input type="checkbox"/>新开商家</label>
+			<label for=""><input type="checkbox"/>免费配送</label>
+			<label for=""><input type="checkbox"/>饿配送</label>
+			<label for=""><input type="checkbox"/>可开发票</label>
+			<label for=""><input type="checkbox"/>在线支付</label>
+		</form>
+		<div class="search">
+			<form action="">
+				<input  type="text" placeholder="搜索商家，美食...">
+			</form>
+			<a href=""><i class="fa fa-search-plus"></i></a>
+		</div>	
+		<div class="clear"></div>	 	
+	</nav>
+
+
+	<!--主体部分-->
+	<div class="wrapper">
+		<div class="now-loca">
+			<div>
+				<span>当前位置:</span>
+				<span>闵行区上海交通大学</span>
+				<a href="">[切换地址]</a>
+			</div>
+			<div class="search">
+				<form action="">
+					<input id="searinput" type="text" placeholder="搜索商家，美食...">
+				</form>
+				<a href=""><i class="fa fa-search-plus"></i></a>
+			</div>
+			<div class="clear"></div>	 		
+		</div>
+
+		<img src="images/else/ad.jpg" alt="advertise" class="ad">
+
+		<div class="mer-classificatin">
+			<img src="images/else/girl.png" alt="" class="girl">
+			<div class="classifi">
+				<a href="">外面商家</a>
+				<a href="">附近的团购</a>
+			</div>
+			<div class="classifi-content">
+				<span>商家分类</span>
+				<ul>
+					<li class="li-backgcolor"><a href="" >全部商家</a></li>
+					<li><a href="" style="color:red">品牌商家</a></li>
+					<li><a href="">快餐类</a></li>
+					<li><a href="">正餐类</a></li>
+					<li><a href="">小吃零食</a></li>
+					<li><a href="">甜品饮品</a></li>
+					<li><a href="">果蔬生鲜</a></li>
+					<li><a href="">鲜花蛋糕</a></li>
+					<li><a href="">超市便利店</a></li>
+				</ul>
+			</div>
+			<div class="classifi-order">
+				<span class="span-title"><a href="">默认排序</a></span>
+				<ul>
+					<li><a href="">销量好</a></li>
+					<li><a href="">评价高</a></li>
+					<li id="choose1"><a href="">其它排序<i class="fa fa-chevron-down"></i></a>
+						<div class="choFrom" id="choFrom1">
+							<span><a href="">其它排序<i class="fa fa-chevron-up"></i></a></span>
+							<div class="a-list">
+								<a href="">距离最近</a>
+								<a href="">配送速度</a>
+								<a href="">起送金额</a>
+							</div>
+						</div>
+					</li>
+					<li id="choose2"><a href="">起送价格：不限<i class="fa fa-chevron-down"></i></a>
+						<div class="choFrom" id="choFrom2">
+							<span><a href="">起送价格：不限<i class="fa fa-chevron-up"></i></a></span>
+							<div class="a-list">
+								<a href="" style="color:#0089dc">不限</a>
+								<a href="">15元以下</a>
+								<a href="">20元以下</a>
+								<a href="">30元以下</a>
+								<a href="">40元以下</a>
+							</div>
+					</li>
+				</ul>
+				<form action="">
+					<label for=""><input type="checkbox"/>新开商家</label>
+					<label for=""><input type="checkbox"/>免费配送</label>
+					<label for=""><input type="checkbox"/>饿配送</label>
+					<label for=""><input type="checkbox"/>可开发票</label>
+					<label for=""><input type="checkbox"/>在线支付</label>
+				</form>
+				<div class="clear"></div>	 	
+			</div>
+			<div class="around-title">
+				<p>想吃好吃的，看看附近<span>19</span><span>家</span>品牌商家吧，<a href="">立即查看</a></p>
+			</div>
+		</div>
+
+		<div class="merchant-wrapper" id="merwrap">
+			<div class="merchant">
+				<div class="merchant-content">
+					<div class="mer-image">
+						<img src="images/merchant/ayi.png" alt="">
+						<span>40分钟</span>
+					</div>
+					<div class="merchant-text">
+						<h3>阿姨奶茶</h3>
+						<div class="icon-star">
+							<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+							<div class="icon-star-on">
+								<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i>
+							</div>
+						</div>
+						<span class="merchant-ab">月售111单</span>
+						<span>10元起送/免费配送</span>
+						<div class="icon-square">
+							<i style="background-color:#f4a937">专</i>
+							<i style="background-color:#f07373">减</i>
+							<i style="background-color:#70bc46">首</i>
+							<i style="background-color:#f1884f">15</i>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<section class="mer-abso">
+					<div class="delta"></div>
+					<div class="delta-line"></div>
+					<div class="abso-text"> 
+						<div class="abso-content">
+							<h3>阿姨奶茶</h3>
+							<p class="p1"><i style="background-color:#f4a937">专</i>该商家在线支付支持使用</p>
+							<p class="p2"><i style="background-color:#f07373">减</i>在线支付满15立减4</p>
+							<p class="p3"><i style="background-color:#70bc46">首</i>新用户下单立减10元</p>
+							<p class="p4"><i style="background-color:#f1884f">15</i>跑男正能量套餐</p>
+							<div class="greybox">
+								<span>十元起送</span>
+								<span class="greyborder">免费配送</span>
+								<span>平均29分钟到达</span>
+							</div>
+							<p class="parag">为了避免高峰期配送问题，请个各位上帝提前下单，提高我们的配送效率，尽快将美味可口的饭菜送到您的嘴边，让您一天有个美好的心情。小区要求送上楼的另收5元上楼服务费</p>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<div class="merchant">
+				<div class="merchant-content">
+					<div class="mer-image">
+						<img src="images/merchant/ayi.png" alt="">
+						<span>40分钟</span>
+					</div>
+					<div class="merchant-text">
+						<h3>阿姨奶茶</h3>
+						<div class="icon-star">
+							<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+							<div class="icon-star-on">
+								<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i>
+							</div>
+						</div>
+						<span class="merchant-ab">月售111单</span>
+						<span>10元起送/免费配送</span>
+						<div class="icon-square">
+							<i style="background-color:#f4a937">专</i>
+							<i style="background-color:#f07373">减</i>
+							<i style="background-color:#70bc46">首</i>
+							<i style="background-color:#f1884f">15</i>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<section class="mer-abso">
+					<div class="delta"></div>
+					<div class="delta-line"></div>
+					<div class="abso-text">
+						<div class="abso-content">
+							<h3>阿姨奶茶</h3>
+							<p><i style="background-color:#f4a937">专</i>该商家在线支付支持使用</p>
+							<p><i style="background-color:#f07373">减</i>在线支付满15立减4</p>
+							<p><i style="background-color:#70bc46">首</i>新用户下单立减10元</p>
+							<p><i style="background-color:#f1884f">15</i>跑男正能量套餐</p>
+							<div class="greybox">
+								<span>十元起送</span>
+								<span class="greyborder">免费配送</span>
+								<span>平均29分钟到达</span>
+							</div>
+							<p class="parag">为了避免高峰期配送问题，请个各位上帝提前下单，提高我们的配送效率，尽快将美味可口的饭菜送到您的嘴边，让您一天有个美好的心情。小区要求送上楼的另收5元上楼服务费</p>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<div class="merchant">
+				<div class="merchant-content">
+					<div class="mer-image">
+						<img src="images/merchant/ayi.png" alt="">
+						<span>40分钟</span>
+					</div>
+					<div class="merchant-text">
+						<h3>阿姨奶茶</h3>
+						<div class="icon-star">
+							<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+							<div class="icon-star-on">
+								<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i>
+							</div>
+						</div>
+						<span class="merchant-ab">月售111单</span>
+						<span>10元起送/免费配送</span>
+						<div class="icon-square">
+							<i style="background-color:#f4a937">专</i>
+							<i style="background-color:#f07373">减</i>
+							<i style="background-color:#70bc46">首</i>
+							<i style="background-color:#f1884f">15</i>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<section class="mer-abso">
+					<div class="delta"></div>
+					<div class="delta-line"></div>
+					<div class="abso-text">
+						<div class="abso-content">
+							<h3>阿姨奶茶</h3>
+							<p><i style="background-color:#f4a937">专</i>该商家在线支付支持使用</p>
+							<p><i style="background-color:#f07373">减</i>在线支付满15立减4</p>
+							<p><i style="background-color:#70bc46">首</i>新用户下单立减10元</p>
+							<p><i style="background-color:#f1884f">15</i>跑男正能量套餐</p>
+							<div class="greybox">
+								<span>十元起送</span>
+								<span class="greyborder">免费配送</span>
+								<span>平均29分钟到达</span>
+							</div>
+							<p class="parag">为了避免高峰期配送问题，请个各位上帝提前下单，提高我们的配送效率，尽快将美味可口的饭菜送到您的嘴边，让您一天有个美好的心情。小区要求送上楼的另收5元上楼服务费</p>
+						</div>
+					</div>
+				</section>	
+			</div>	
+
+			<div class="merchant ">
+				<div class="merchant-content">
+					<div class="mer-image">
+						<img src="images/merchant/ayi.png" alt="">
+						<span>40分钟</span>
+					</div>
+					<div class="merchant-text">
+						<h3>阿姨奶茶</h3>
+						<div class="icon-star">
+							<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+							<div class="icon-star-on">
+								<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i>
+							</div>
+						</div>
+						<span class="merchant-ab">月售111单</span>
+						<span>10元起送/免费配送</span>
+						<div class="icon-square">
+							<i style="background-color:#f4a937">专</i>
+							<i style="background-color:#f07373">减</i>
+							<i style="background-color:#70bc46">首</i>
+							<i style="background-color:#f1884f">15</i>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<section class="mer-abso" id="abLeft1">
+					<div class="delta"></div>
+					<div class="delta-line"></div>
+					<div class="abso-text">
+						<div class="abso-content">
+							<h3>阿姨奶茶</h3>
+							<p><i style="background-color:#f4a937">专</i>该商家在线支付支持使用</p>
+							<p><i style="background-color:#f07373">减</i>在线支付满15立减4</p>
+							<p><i style="background-color:#70bc46">首</i>新用户下单立减10元</p>
+							<p><i style="background-color:#f1884f">15</i>跑男正能量套餐</p>
+							<div class="greybox">
+								<span>十元起送</span>
+								<span class="greyborder">免费配送</span>
+								<span>平均29分钟到达</span>
+							</div>
+							<p class="parag">为了避免高峰期配送问题，请个各位上帝提前下单，提高我们的配送效率，尽快将美味可口的饭菜送到您的嘴边，让您一天有个美好的心情。小区要求送上楼的另收5元上楼服务费</p>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="merchant">
+				<div class="merchant-content">
+					<div class="mer-image">
+						<img src="images/merchant/ayi.png" alt="">
+						<span>40分钟</span>
+					</div>
+					<div class="merchant-text">
+						<h3>阿姨奶茶</h3>
+						<div class="icon-star">
+							<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+							<div class="icon-star-on">
+								<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i>
+							</div>
+						</div>
+						<span class="merchant-ab">月售111单</span>
+						<span>10元起送/免费配送</span>
+						<div class="icon-square">
+							<i style="background-color:#f4a937">专</i>
+							<i style="background-color:#f07373">减</i>
+							<i style="background-color:#70bc46">首</i>
+							<i style="background-color:#f1884f">15</i>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<section class="mer-abso">
+					<div class="delta"></div>
+					<div class="delta-line"></div>
+					<div class="abso-text">
+						<div class="abso-content">
+							<h3>阿姨奶茶</h3>
+							<p><i style="background-color:#f4a937">专</i>该商家在线支付支持使用</p>
+							<p><i style="background-color:#f07373">减</i>在线支付满15立减4</p>
+							<p><i style="background-color:#70bc46">首</i>新用户下单立减10元</p>
+							<p><i style="background-color:#f1884f">15</i>跑男正能量套餐</p>
+							<div class="greybox">
+								<span>十元起送</span>
+								<span class="greyborder">免费配送</span>
+								<span>平均29分钟到达</span>
+							</div>
+							<p class="parag">为了避免高峰期配送问题，请个各位上帝提前下单，提高我们的配送效率，尽快将美味可口的饭菜送到您的嘴边，让您一天有个美好的心情。小区要求送上楼的另收5元上楼服务费</p>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="merchant">
+				<div class="merchant-content">
+					<div class="mer-image">
+						<img src="images/merchant/ayi.png" alt="">
+						<span>40分钟</span>
+					</div>
+					<div class="merchant-text">
+						<h3>阿姨奶茶</h3>
+						<div class="icon-star">
+							<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+							<div class="icon-star-on">
+								<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i>
+							</div>
+						</div>
+						<span class="merchant-ab">月售111单</span>
+						<span>10元起送/免费配送</span>
+						<div class="icon-square">
+							<i style="background-color:#f4a937">专</i>
+							<i style="background-color:#f07373">减</i>
+							<i style="background-color:#70bc46">首</i>
+							<i style="background-color:#f1884f">15</i>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<section class="mer-abso">
+					<div class="delta"></div>
+					<div class="delta-line"></div>
+					<div class="abso-text">
+						<div class="abso-content">
+							<h3>阿姨奶茶</h3>
+							<p><i style="background-color:#f4a937">专</i>该商家在线支付支持使用</p>
+							<p><i style="background-color:#f07373">减</i>在线支付满15立减4</p>
+							<p><i style="background-color:#70bc46">首</i>新用户下单立减10元</p>
+							<p><i style="background-color:#f1884f">15</i>跑男正能量套餐</p>
+							<div class="greybox">
+								<span>十元起送</span>
+								<span class="greyborder">免费配送</span>
+								<span>平均29分钟到达</span>
+							</div>
+							<p class="parag">为了避免高峰期配送问题，请个各位上帝提前下单，提高我们的配送效率，尽快将美味可口的饭菜送到您的嘴边，让您一天有个美好的心情。小区要求送上楼的另收5元上楼服务费</p>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="merchant">
+				<div class="merchant-content">
+					<div class="mer-image">
+						<img src="images/merchant/ayi.png" alt="">
+						<span>40分钟</span>
+					</div>
+					<div class="merchant-text">
+						<h3>阿姨奶茶</h3>
+						<div class="icon-star">
+							<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+							<div class="icon-star-on">
+								<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i>
+							</div>
+						</div>
+						<span class="merchant-ab">月售111单</span>
+						<span>10元起送/免费配送</span>
+						<div class="icon-square">
+							<i style="background-color:#f4a937">专</i>
+							<i style="background-color:#f07373">减</i>
+							<i style="background-color:#70bc46">首</i>
+							<i style="background-color:#f1884f">15</i>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<section class="mer-abso">
+					<div class="delta"></div>
+					<div class="delta-line"></div>
+					<div class="abso-text">
+						<div class="abso-content">
+							<h3>阿姨奶茶</h3>
+							<p><i style="background-color:#f4a937">专</i>该商家在线支付支持使用</p>
+							<p><i style="background-color:#f07373">减</i>在线支付满15立减4</p>
+							<p><i style="background-color:#70bc46">首</i>新用户下单立减10元</p>
+							<p><i style="background-color:#f1884f">15</i>跑男正能量套餐</p>
+							<div class="greybox">
+								<span>十元起送</span>
+								<span class="greyborder">免费配送</span>
+								<span>平均29分钟到达</span>
+							</div>
+							<p class="parag">为了避免高峰期配送问题，请个各位上帝提前下单，提高我们的配送效率，尽快将美味可口的饭菜送到您的嘴边，让您一天有个美好的心情。小区要求送上楼的另收5元上楼服务费</p>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="merchant">
+				<div class="merchant-content">
+					<div class="mer-image">
+						<img src="images/merchant/ayi.png" alt="">
+						<span>40分钟</span>
+					</div>
+					<div class="merchant-text">
+						<h3>阿姨奶茶</h3>
+						<div class="icon-star">
+							<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+							<div class="icon-star-on">
+								<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i>
+							</div>
+						</div>
+						<span class="merchant-ab">月售111单</span>
+						<span>10元起送/免费配送</span>
+						<div class="icon-square">
+							<i style="background-color:#f4a937">专</i>
+							<i style="background-color:#f07373">减</i>
+							<i style="background-color:#70bc46">首</i>
+							<i style="background-color:#f1884f">15</i>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<section class="mer-abso" id="abLeft2">
+					<div class="delta"></div>
+					<div class="delta-line"></div>
+					<div class="abso-text">
+						<div class="abso-content">
+							<h3>阿姨奶茶</h3>
+							<p><i style="background-color:#f4a937">专</i>该商家在线支付支持使用</p>
+							<p><i style="background-color:#f07373">减</i>在线支付满15立减4</p>
+							<p><i style="background-color:#70bc46">首</i>新用户下单立减10元</p>
+							<p><i style="background-color:#f1884f">15</i>跑男正能量套餐</p>
+							<div class="greybox">
+								<span>十元起送</span>
+								<span class="greyborder">免费配送</span>
+								<span>平均29分钟到达</span>
+							</div>
+							<p class="parag">为了避免高峰期配送问题，请个各位上帝提前下单，提高我们的配送效率，尽快将美味可口的饭菜送到您的嘴边，让您一天有个美好的心情。小区要求送上楼的另收5元上楼服务费</p>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="merchant">
+				<div class="merchant-content">
+					<div class="mer-image">
+						<img src="images/merchant/ayi.png" alt="">
+						<span>40分钟</span>
+					</div>
+					<div class="merchant-text">
+						<h3>阿姨奶茶</h3>
+						<div class="icon-star">
+							<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+							<div class="icon-star-on">
+								<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i>
+							</div>
+						</div>
+						<span class="merchant-ab">月售111单</span>
+						<span>10元起送/免费配送</span>
+						<div class="icon-square">
+							<i style="background-color:#f4a937">专</i>
+							<i style="background-color:#f07373">减</i>
+							<i style="background-color:#70bc46">首</i>
+							<i style="background-color:#f1884f">15</i>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<section class="mer-abso">
+					<div class="delta"></div>
+					<div class="delta-line"></div>
+					<div class="abso-text">
+						<div class="abso-content">
+							<h3>阿姨奶茶</h3>
+							<p><i style="background-color:#f4a937">专</i>该商家在线支付支持使用</p>
+							<p><i style="background-color:#f07373">减</i>在线支付满15立减4</p>
+							<p><i style="background-color:#70bc46">首</i>新用户下单立减10元</p>
+							<p><i style="background-color:#f1884f">15</i>跑男正能量套餐</p>
+							<div class="greybox">
+								<span>十元起送</span>
+								<span class="greyborder">免费配送</span>
+								<span>平均29分钟到达</span>
+							</div>
+							<p class="parag">为了避免高峰期配送问题，请个各位上帝提前下单，提高我们的配送效率，尽快将美味可口的饭菜送到您的嘴边，让您一天有个美好的心情。小区要求送上楼的另收5元上楼服务费</p>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="merchant">
+				<div class="merchant-content">
+					<div class="mer-image">
+						<img src="images/merchant/ayi.png" alt="">
+						<span>40分钟</span>
+					</div>
+					<div class="merchant-text">
+						<h3>阿姨奶茶</h3>
+						<div class="icon-star">
+							<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+							<div class="icon-star-on">
+								<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i>
+							</div>
+						</div>
+						<span class="merchant-ab">月售111单</span>
+						<span>10元起送/免费配送</span>
+						<div class="icon-square">
+							<i style="background-color:#f4a937">专</i>
+							<i style="background-color:#f07373">减</i>
+							<i style="background-color:#70bc46">首</i>
+							<i style="background-color:#f1884f">15</i>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<section class="mer-abso">
+					<div class="delta"></div>
+					<div class="delta-line"></div>
+					<div class="abso-text">
+						<div class="abso-content">
+							<h3>阿姨奶茶</h3>
+							<p><i style="background-color:#f4a937">专</i>该商家在线支付支持使用</p>
+							<p><i style="background-color:#f07373">减</i>在线支付满15立减4</p>
+							<p><i style="background-color:#70bc46">首</i>新用户下单立减10元</p>
+							<p><i style="background-color:#f1884f">15</i>跑男正能量套餐</p>
+							<div class="greybox">
+								<span>十元起送</span>
+								<span class="greyborder">免费配送</span>
+								<span>平均29分钟到达</span>
+							</div>
+							<p class="parag">为了避免高峰期配送问题，请个各位上帝提前下单，提高我们的配送效率，尽快将美味可口的饭菜送到您的嘴边，让您一天有个美好的心情。小区要求送上楼的另收5元上楼服务费</p>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="merchant">
+				<div class="merchant-content">
+					<div class="mer-image">
+						<img src="images/merchant/ayi.png" alt="">
+						<span>40分钟</span>
+					</div>
+					<div class="merchant-text">
+						<h3>阿姨奶茶</h3>
+						<div class="icon-star">
+							<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+							<div class="icon-star-on">
+								<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i>
+							</div>
+						</div>
+						<span class="merchant-ab">月售111单</span>
+						<span>10元起送/免费配送</span>
+						<div class="icon-square">
+							<i style="background-color:#f4a937">专</i>
+							<i style="background-color:#f07373">减</i>
+							<i style="background-color:#70bc46">首</i>
+							<i style="background-color:#f1884f">15</i>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<section class="mer-abso">
+					<div class="delta"></div>
+					<div class="delta-line"></div>
+					<div class="abso-text">
+						<div class="abso-content">
+							<h3>阿姨奶茶</h3>
+							<p><i style="background-color:#f4a937">专</i>该商家在线支付支持使用</p>
+							<p><i style="background-color:#f07373">减</i>在线支付满15立减4</p>
+							<p><i style="background-color:#70bc46">首</i>新用户下单立减10元</p>
+							<p><i style="background-color:#f1884f">15</i>跑男正能量套餐</p>
+							<div class="greybox">
+								<span>十元起送</span>
+								<span class="greyborder">免费配送</span>
+								<span>平均29分钟到达</span>
+							</div>
+							<p class="parag">为了避免高峰期配送问题，请个各位上帝提前下单，提高我们的配送效率，尽快将美味可口的饭菜送到您的嘴边，让您一天有个美好的心情。小区要求送上楼的另收5元上楼服务费</p>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="merchant">
+				<div class="merchant-content">
+					<div class="mer-image">
+						<img src="images/merchant/ayi.png" alt="">
+						<span>40分钟</span>
+					</div>
+					<div class="merchant-text">
+						<h3>阿姨奶茶</h3>
+						<div class="icon-star">
+							<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+							<div class="icon-star-on">
+								<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i>
+							</div>
+						</div>
+						<span class="merchant-ab">月售111单</span>
+						<span>10元起送/免费配送</span>
+						<div class="icon-square">
+							<i style="background-color:#f4a937">专</i>
+							<i style="background-color:#f07373">减</i>
+							<i style="background-color:#70bc46">首</i>
+							<i style="background-color:#f1884f">15</i>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<section class="mer-abso" id="abLeft3">
+					<div class="delta"></div>
+					<div class="delta-line"></div>
+					<div class="abso-text">
+						<div class="abso-content">
+							<h3>阿姨奶茶</h3>
+							<p><i style="background-color:#f4a937">专</i>该商家在线支付支持使用</p>
+							<p><i style="background-color:#f07373">减</i>在线支付满15立减4</p>
+							<p><i style="background-color:#70bc46">首</i>新用户下单立减10元</p>
+							<p><i style="background-color:#f1884f">15</i>跑男正能量套餐</p>
+							<div class="greybox">
+								<span>十元起送</span>
+								<span class="greyborder">免费配送</span>
+								<span>平均29分钟到达</span>
+							</div>	
+							<p class="parag">为了避免高峰期配送问题，请个各位上帝提前下单，提高我们的配送效率，尽快将美味可口的饭菜送到您的嘴边，让您一天有个美好的心情。小区要求送上楼的另收5元上楼服务费</p>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="clear"></div>	
+
+	</div>
+
+
+	<div class="foot">
+		<div class="foot-wrapper">
+			<div class="foot-one">
+				<span>用户帮助</span>
+				<ul>
+					<li><a href="">服务中心</a></li>
+					<li><a href="">常见问题</a></li>
+					<li><a href="">在线客服</a></li>
+				</ul>				
+			</div>
+			<div class="foot-two">
+				<span>商务合作</span>
+				<ul>
+					<li><a href="">我要开店</a></li>
+					<li><a href="">加盟指南</a></li>
+					<li><a href="">市场合作</a></li>
+					<li><a href="">开放平台</a></li>
+				</ul>			
+			</div>
+			<div class="foot-three">
+				<span>关于我们</span>
+				<ul>
+					<li><a href="">饿了么介绍</a></li>
+					<li><a href="">加入我们</a></li>
+					<li><a href="">联系我们</a></li>
+					<li><a href="">服务协议</a></li>
+				</ul>			
+			</div>
+			<div class="foot-four">
+				<p>24小时客服热线：10105757</p>
+				<p>意见反馈：feedback@ele.me</p>
+				<p>关注我们：<i class="fa fa-weixin"></i><i class="fa fa-weibo"></i><i class="fa fa-renren"></i></p>
+			</div>
+			<div class="foot-five">
+				<img src="images/else/erweima.png" alt="二维码">
+				<div>
+					<h3>下载手机版</h3>
+					<p>扫一扫，手机订餐方便</p>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<p class="bottom-p">增值电信业务许可证 : 沪B2-20150033 | 沪ICP备 09007032 | 上海工商行政管理 Copyright ©2008-2015 ele.me, All Rights Reserved.</p>
+		<div  class="bottom-img"><img src="images/else/bottom.png" alt=""></div>
+	</div>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/event.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
